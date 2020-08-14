@@ -10,16 +10,28 @@ With this script, all I have to do is rename the file with the 4 digit ID and th
 moves into the designated folder. Using cron jobs, I have this script running once a minute to check
 if there are any files that need transferring. <br><br>
 <strong>Set Up Cron Job:</strong><br>
-* $ crontab -e 
-  * If this doesn't work type "VISUAL=nano crontab -e" instead
-* Add this cron job, with your appropriate path
-  * "* * * * * /usr/bin/python3 "/path/to/script" "
-* Save the file and you're done!
+1. $ crontab -e 
+   * If this doesn't work type "VISUAL=nano crontab -e" instead
+2. Add this cron job, with your appropriate path
+   * "* * * * * /usr/bin/python3 "/path/to/script" "
+3. Save the file and you're done!
 ## Search Google, Youtube, Amazon (search_script.py)
 <strong>Use:</strong> Search Google, Youtube, Amazon with with a simple terminal command and save
 many minutes of your life by eliminating many steps in between. <br><br>
 <strong>Set Up:</strong><br>
-1.asdfsd
-2.adsfasdf
-3.
- 
+I used this <a href="https://dbader.org/blog/how-to-make-command-line-commands-with-python">site</a>. Here is a short summary: <br>
+1. cd to the directory with the script, then:
+   * $ chmod +x search_script.py
+2. Make sure the "#!/usr/bin/env python3" is the first line of the script!
+3. In the same directory:
+   * $ mv search_script.py search
+     * It does not have to be search, it can be whatever command you want like "lookup"
+4. Create a 'bin' directory in your home directory with:
+   * $ mkdir -p ~/bin
+5. Then cp the command to this directory with:
+   * $ cp search ~/bin
+6. Open your bash profile with:
+   * $ open ~/.bash_profile
+7. Add the following line to your bash_profile:
+   * export PATH=$PATH":$HOME/bin
+8. Save the file and you're done!
