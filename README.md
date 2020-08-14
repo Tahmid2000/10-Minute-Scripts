@@ -9,8 +9,17 @@ I would have to name it with that course's 4 digit ID and then isnert it into th
 With this script, all I have to do is rename the file with the 4 digit ID and the file automatically
 moves into the designated folder. Using cron jobs, I have this script running once a minute to check
 if there are any files that need transferring. <br><br>
-<strong>Set Up:</strong>
+<strong>Set Up Cron Job:</strong><br>
+* $ crontab -e 
+  * If this doesn't work type "VISUAL=nano crontab -e" instead
+* Add this cron job, with your appropriate path
+  * "* * * * * /usr/bin/python3 "/path/to/script" "
+* Save the file and you're done!
 ## Search Google, Youtube, Amazon (search_script.py)
 <strong>Use:</strong> Search Google, Youtube, Amazon with with a simple terminal command and save
 many minutes of your life by eliminating many steps in between. <br><br>
-<strong>Set Up:</strong>
+<strong>Set Up:</strong><br>
+1.asdfsd
+2.adsfasdf
+3.
+ 
