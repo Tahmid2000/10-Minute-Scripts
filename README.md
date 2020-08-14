@@ -34,4 +34,14 @@ I used this <a href="https://dbader.org/blog/how-to-make-command-line-commands-w
    * $ open ~/.bash_profile
 7. Add the following line to your bash_profile:
    * export PATH=$PATH":$HOME/bin
-8. Save the file and you're done!
+8. Save the file and you're done! 
+
+<strong>How to use the commands:</strong><br>
+* $ search django docs
+  * Googles 'django docs'
+* $ search
+  * Googles whatever is on your clipboard (really useful for copying a coding error and searching it up)
+* $ search yt React JS for beginners
+  * Searches Youtube for 'React JS for beginners'
+* $ search am monitor
+  * Searches Amazon for 'monitor'
