@@ -19,7 +19,7 @@ if there are any files that need transferring. <br><br>
 <strong>Use:</strong> Search Google, Youtube, Amazon with with a simple terminal command and save
 many minutes of your life by eliminating many steps in between. <br><br>
 <strong>Set Up:</strong><br>
-I used this <a href="https://dbader.org/blog/how-to-make-command-line-commands-with-python">site</a>. Here is a short summary: <br>
+I used this <a href="https://dbader.org/blog/how-to-make-command-line-commands-with-python">site</a>. Here is a short summary:
 1. cd to the directory with the script, then:
    * $ chmod +x search_script.py
 2. Make sure the "#!/usr/bin/env python3" is the first line of the script!
@@ -36,7 +36,7 @@ I used this <a href="https://dbader.org/blog/how-to-make-command-line-commands-w
    * export PATH=$PATH":$HOME/bin
 8. Save the file and you're done! 
 
-<strong>How to use the commands:</strong><br>
+<strong>How to use the commands:</strong>
 * $ search django docs
   * Googles 'django docs'
 * $ search
