@@ -38,10 +38,42 @@ I used this <a href="https://dbader.org/blog/how-to-make-command-line-commands-w
 
 <strong>How to use the commands:</strong>
 * $ search django docs
-  * Googles 'django docs'
+  * Googles 'django docs'.
 * $ search
-  * Googles whatever is on your clipboard (really useful for copying a coding error and searching it up)
+  * Googles whatever is on your clipboard (really useful for copying a coding error and searching it up).
 * $ search yt React JS for beginners
-  * Searches Youtube for 'React JS for beginners'
+  * Searches Youtube for 'React JS for beginners'.
 * $ search am monitor
-  * Searches Amazon for 'monitor'
+  * Searches Amazon for 'monitor'.
+## COVID-19 Data (covid_data.py)
+<strong>Use:</strong> Get recent COVID-19 data from different states, countries, or even the world with one simple command.<br><br>
+<strong>Set Up:</strong><br>
+I used this <a href="https://dbader.org/blog/how-to-make-command-line-commands-with-python">site</a>. Here is a short summary:
+1. cd to the directory with the script, then:
+   * $ chmod +x covid_data.py
+2. Make sure the "#!/usr/bin/env python3" is the first line of the script!
+3. In the same directory:
+   * $ mv covid_data.py covid
+     * It does not have to be search, it can be whatever command you want like "cvd"
+4. Create a 'bin' directory in your home directory with:
+   * $ mkdir -p ~/bin
+5. Then cp the command to this directory with:
+   * $ cp search ~/bin
+6. Open your bash profile with:
+   * $ open ~/.bash_profile
+7. Add the following line to your bash_profile:
+   * export PATH=$PATH":$HOME/bin
+8. Save the file and you're done! 
+
+<strong>How to use the commands:</strong>
+* $ covid
+  * Returns total cases and deaths globally, in the USA, and in Texas.
+* $ covid bangladesh
+  * Returns total cases and deaths in a specific country (in this case Bangladesh).
+* $ covid state ca
+  * Returns total cases and deaths in a specific state (in this case California).
+    * Note: This is has to be the 2 letter state code.
+
+<strong>The APIs I used: </strong>
+1. Global and country data: https://coronavirus-19-api.herokuapp.com/
+2. State data: https://coronavirusapi.com 
